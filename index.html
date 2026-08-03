@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zubair's Clock App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello Learners</h1>
-    <h2>Hello World</h2>
-    <p>
-        Hey, I am here in a masterclass
-    </p>
+  <header>
+    <h1>🕒 My Smart Clock</h1>
+  </header>
+
+  <section id="local-time">
+    <h2>Local Time</h2>
+    <div id="clock"></div>
+  </section>
+
+  <section id="timezone">
+    <h2>Custom Time Zone</h2>
+    <select id="timezone-select"></select>
+    <div id="timezone-clock"></div>
+  </section>
+
+  <section id="stopwatch">
+    <h2>Stopwatch</h2>
+    <div id="stopwatch-display">00:00:00</div>
+    <button onclick="startStopwatch()">Start</button>
+    <button onclick="pauseStopwatch()">Pause</button>
+    <button onclick="resetStopwatch()">Reset</button>
+  </section>
+
+  <section id="timer">
+    <h2>Timer</h2>
+    <input type="number" id="minutes" placeholder="Minutes">
+    <input type="number" id="seconds" placeholder="Seconds">
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+    <div id="timer-display">00:00</div>
+  </section>
+
+  <footer>© 2025 Zubair</footer>
+  <script src="script.js"></script>
 </body>
 </html>
