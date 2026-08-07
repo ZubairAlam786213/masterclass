@@ -1,41 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zubair's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Backend Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm Zubair</h1>
-    <p>Student | Developer | Researcher</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I love blending technical skills with creative presentation.</p>
-  </section>
+<nav>
+    <h2>Portfolio</h2>
 
-  <section id="projects">
-    <h2>Projects</h2>
     <ul>
-      <li>AI Awareness Survey Analysis</li>
-      <li>Stack Implementation in C (with diagrams!)</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
-  </section>
+</nav>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: zubairalam786213@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/ZubairAlam786213">Zubair Alam</a></p>
-  </section>
+<header>
 
-  <footer>© 2025 Zubair</footer>
+    <img src="assets/profile.jpg" class="profile">
+
+    <h1>Your Name</h1>
+
+    <h3>Backend Developer • Python • FastAPI</h3>
+
+    <p>
+        I build scalable backend systems, APIs and microservices using FastAPI,
+        PostgreSQL, Docker and cloud deployment.
+    </p>
+
+    <a class="btn" href="assets/resume.pdf" download>
+        Download Resume
+    </a>
+
+</header>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+
+        Passionate backend developer interested in distributed systems,
+        API design and cloud deployment.
+
+        I enjoy solving real-world engineering problems with Python and FastAPI.
+
+    </p>
+
+</section>
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div id="project-list" class="projects">
+        Loading...
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+        >
+
+        <textarea
+            id="message"
+            placeholder="Message"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="status"></p>
+
+</section>
+
+<footer>
+
+    © 2026 Your Name
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
